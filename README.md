@@ -104,7 +104,11 @@ ps aux
 4. dotnet-runtime-6.0をインストール
 ```
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+```
+```
 sudo dpkg -i packages-microsoft-prod.deb
+```
+```
 rm packages-microsoft-prod.deb
 ```
 
@@ -169,6 +173,8 @@ systemctl
 1. Open SSH Serverのインストール
 ```
 sudo apt update
+```
+```
 sudo apt install openssh-server
 ```
 
