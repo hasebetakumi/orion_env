@@ -1,14 +1,14 @@
 # ORION開発環境構築
 
 # 目次
-前提条件(#pre)
-WSLインストール
-Ubuntuインストール
-WSLのバージョン変更
-WSL2上でsystemctlを利用できるようにする
-SSH接続の準備
-TeratermインストールとSSH接続
-Dockerインストール
+[前提条件](#pre)
+[WSLインストール](#wsl)
+[Ubuntuインストール](#ubuntu)
+[WSLのバージョン変更](#wsl-v)
+[WSL2上でsystemctlを利用できるようにする](#pid)
+[SSH接続の準備](#pre-ssh)
+[TeratermインストールとSSH接続](#ssh)
+[Dockerインストール](#docker)
 
 <a id="pre"></a>
 # 前提条件
@@ -23,6 +23,7 @@ Microsoft Store版のWSLを利用することで、PID1でのsystemdが公式に
 (https://forest.watch.impress.co.jp/docs/news/1441775.html)
 また、インボックス版のWSLをインストールする際は、wsl --installコマンド一つで、WSL2がインストールされUbuntuの起動まで自動で行われるそう。
 
+<a id="wsl"></a>
 # WSLインストール
 
 参照リンク：<br>
@@ -38,6 +39,7 @@ wsl --install
 4. 「Windows の機能の有効化または無効化」を開く
 5. 「Linux 用 Windows サブシステム」と「仮想マシン プラットフォーム」が有効になっていることを確認
 
+<a id="ubuntu"></a>
 # Ubuntuインストール
 
 参照リンク：<br>
@@ -84,6 +86,7 @@ exit
 date
 ```
 
+<a id="wsl-v"></a>
 # WSLのバージョン変更
 
 参照リンク：<br>
@@ -102,6 +105,7 @@ wsl --set-version Ubuntu 2
 wsl -l -v
 ```
 
+<a id="pid"></a>
 # WSL2上でsystemctlを利用できるようにする
 
 参照リンク：<br>
@@ -180,6 +184,7 @@ systemctl
 
 [Windows 10 or 11 （WSL2）のUbuntuでsystemctlを利用する方法（systemdをPID1で動作させる方法）](https://snowsystem.net/other/windows/wsl2-ubuntu-systemctl/)
 
+<a id="pre-ssh"></a>
 # SSH接続の準備
 
 参照リンク：<br>
@@ -213,6 +218,7 @@ sudo systemctl start ssh
 sudo systemctl status ssh
 ```
 
+<a id="ssh"></a>
 # TeratermインストールとSSH接続
 
 参照リンク：<br>
@@ -234,6 +240,7 @@ ip a
 
 6. Ubuntuインストールの4. で設定したユーザー名とパスフレーズを入力し「OK」
 
+<a id="docker"></a>
 # Dockerインストール
 
 参照リンク：<br>
