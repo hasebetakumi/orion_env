@@ -273,13 +273,13 @@ apt-get update
 
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
-
-  2022年10月19日追記
+  
+  恐らくここでdocker-ceの処理中にエラー。インストール自体はされているため、次からの手順を続ける<br>
+  
+  (2022年10月19日追記)<br>
   以下のエラーはインストール時ではなく、Dockerの起動時に発生。
   パッケージ関連のエラーであると推測する。
   https://qiita.com/Crow314/items/794cabf5603cc5938855
-  
-  恐らくここでdocker-ceの処理中にエラー。インストール自体はされているため、次からの手順を続ける
   
 2. iptableをレガシーに設定
 ```
