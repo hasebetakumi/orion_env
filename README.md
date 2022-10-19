@@ -1,14 +1,14 @@
 # ORION開発環境構築
 
 # 目次
-[前提条件](#pre)
-[WSLインストール](#wsl)
-[Ubuntuインストール](#ubuntu)
-[WSLのバージョン変更](#wsl-v)
-[WSL2上でsystemctlを利用できるようにする](#pid)
-[SSH接続の準備](#pre-ssh)
-[TeratermインストールとSSH接続](#ssh)
-[Dockerインストール](#docker)
+[前提条件](#pre)<br>
+[WSLインストール](#wsl)<br>
+[Ubuntuインストール](#ubuntu)<br>
+[WSLのバージョン変更](#wsl-v)<br>
+[WSL2上でsystemctlを利用できるようにする](#pid)<br>
+[SSH接続の準備](#pre-ssh)<br>
+[TeratermインストールとSSH接続](#ssh)<br>
+[Dockerインストール](#docker)<br>
 
 <a id="pre"></a>
 # 前提条件
