@@ -141,13 +141,10 @@ sudo apt-get update; \
 
 5. 残りの依存モジュールをインストール
 ```
-daemonize dbus gawk libc6 libstdc++6 policykit-1 systemd systemd-container
-```
-```
 sudo apt install -y daemonize dbus gawk libc6 libstdc++6 policykit-1 systemd systemd-container
 ```
 
-6. wsl-transdebianのリポジトリ設定（catコマンドで書き込めない場合は、viコマンドで直接書き込み）
+6. wsl-transdebianのリポジトリ設定
 ```
 sudo apt install apt-transport-https
 ```
@@ -163,6 +160,7 @@ deb https://arkane-systems.github.io/wsl-transdebian/apt/ focal main
 deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ focal main
 EOF
 ```
+（catコマンドで書き込めない場合は、viコマンドで直接書き込み）
 ```
 sudo apt update
 ```
