@@ -147,16 +147,20 @@ daemonize dbus gawk libc6 libstdc++6 policykit-1 systemd systemd-container
 6. wsl-transdebianのリポジトリ設定（catコマンドで書き込めない場合は、viコマンドで直接書き込み）
 ```
 sudo apt install apt-transport-https
-
+```
+```
 sudo wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
-
+```
+```
 sudo chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
-
+```
+```
 sudo cat << EOF > /etc/apt/sources.list.d/wsl-transdebian.list
 deb https://arkane-systems.github.io/wsl-transdebian/apt/ $(lsb_release -cs) main
 deb-src https://arkane-systems.github.io/wsl-transdebian/apt/ $(lsb_release -cs) main
 EOF
-
+```
+```
 sudo apt update
 ```
 
