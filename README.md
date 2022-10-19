@@ -184,7 +184,7 @@ ps aux
 systemctl
 ```
 
-11. 今後もgenieを起動していないと、systemctlコマンドは使用できない。以下のリンクに起動時にgenieを自動で起動する設定方法があるが、自分は試していない。
+11. 今後もgenieを起動していないと、systemctlコマンドは使用できない。以下のリンクにgenieを自動で起動する設定方法があるが、自分は試していない。
 
 [Windows 10 or 11 （WSL2）のUbuntuでsystemctlを利用する方法（systemdをPID1で動作させる方法）](https://snowsystem.net/other/windows/wsl2-ubuntu-systemctl/)
 
