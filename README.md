@@ -143,6 +143,9 @@ sudo apt-get update; \
 ```
 daemonize dbus gawk libc6 libstdc++6 policykit-1 systemd systemd-container
 ```
+```
+sudo apt install -y daemonize dbus gawk libc6 libstdc++6 policykit-1 systemd systemd-container
+```
 
 6. wsl-transdebianのリポジトリ設定（catコマンドで書き込めない場合は、viコマンドで直接書き込み）
 ```
