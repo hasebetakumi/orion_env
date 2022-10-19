@@ -9,6 +9,8 @@ Windows 10 バージョン 2004 以降
 
 # WSLインストール
 
+
+
 参照リンク：<br>
 [WSL2のインストールと分かりやすく解説【Windows10/11】](https://chigusa-web.com/blog/wsl2-win11/)<br>
 [WSL(Windows10)にLinuxのUbuntuインストール](https://reffect.co.jp/windows/wsl-windows-ubuntu-install#Ubuntu-2)
@@ -271,9 +273,12 @@ systemctl status docker
 docker ps
 ```
 
-4. root権限を使用せずDockerを利用できるようにする
+4. root権限を使用せずDockerを利用できるようにする。その後、再ログイン
 ```
 sudo usermod -aG docker <your-user>
+```
+```
+exit
 ```
 
 5. 試しにnginx起動
