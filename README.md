@@ -18,7 +18,7 @@
 
 Windows 10 バージョン 2004 以降
 
-(Windouw11なら)
+(Windouw11なら)<br>
 Microsoft Store版のWSLを利用することで、PID1でのsystemdが公式に採用された。(2022/9/21)
 (https://forest.watch.impress.co.jp/docs/news/1441775.html)
 また、インボックス版のWSLをインストールする際は、wsl --installコマンド一つで、WSL2がインストールされUbuntuの起動まで自動で行われるそう。
