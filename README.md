@@ -287,6 +287,10 @@ apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
   上記のエラーはインストール時ではなく、Dockerの起動時に発生。
   パッケージ関連のエラーであると推測する。
   https://qiita.com/Crow314/items/794cabf5603cc5938855
+  以下のコマンドでパッケージエラーを調べられる。出力がなければエラーなし。
+  ```
+  dpkg --audit
+  ```
   
 2. iptableをレガシーに設定
 ```
