@@ -245,9 +245,11 @@ ip a
 
 6. Ubuntuインストールの4. で設定したユーザー名とパスフレーズを入力し「OK」
 
+7. setup→general→言語をJapaneseに、言語UIをJapanese.Ingに
+
 7. 設定→その他の設定→ログからログの保存設定を行う
 
-8. 標準ログファイル名「%Y%m%d_%H%M%S_&h.log」、標準ログ保存先フォルダはドキュメント下等の好きな場所を指定、オプションは「追記」「プレーンテキスト」「タイムスタンプ」にチェックを入れて「OK」クリック
+8. 標準ログファイル名「%Y%m%d_%H%M%S_&h.log」、標準ログ保存先フォルダはドキュメント下等の好きな場所を指定、「自動的にログ採取を開始する」にチェック、オプションは「追記」「プレーンテキスト」「タイムスタンプ」にチェックを入れて「OK」クリック
 
 9. 設定→設定の保存→TERATERM.INIの上書きを行うことで、次回起動時からは設定が自動で呼ばれる
 
@@ -260,9 +262,9 @@ ip a
 
 1. 公式ドキュメント通りにインストール
 ```
-apt-get update
+sudo apt-get update
 
-apt-get install \
+sudo apt-get install \
     ca-certificates \
     curl \
     gnupg \
@@ -276,9 +278,9 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-apt-get update
+sudo apt-get update
 
-apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
   
   恐らくここでdocker-ceの処理中にエラー。インストール自体はされているため、次からの手順を続ける<br>
@@ -310,10 +312,10 @@ update-alternatives --config iptables
 
 3. Docker起動とその確認
 ```
-systemctl start docker
+sudo systemctl start docker
 ```
 ```
-systemctl status docker
+sudo systemctl status docker
 ```
 ```
 docker ps
