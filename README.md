@@ -7,9 +7,12 @@
 
 Windows 10 バージョン 2004 以降
 
+(Windouw11なら)
+Microsoft Store版のWSLを利用することで、PID1でのsystemdが公式に採用された。(2022/9/21)
+(https://forest.watch.impress.co.jp/docs/news/1441775.html)
+また、インボックス版のWSLをインストールする際は、wsl --installコマンド一つで、WSL2がインストールされUbuntuの起動まで自動で行われるそう。
+
 # WSLインストール
-
-
 
 参照リンク：<br>
 [WSL2のインストールと分かりやすく解説【Windows10/11】](https://chigusa-web.com/blog/wsl2-win11/)<br>
@@ -248,6 +251,12 @@ apt-get update
 
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
+
+  2022年10月19日追記
+  以下のエラーはインストール時ではなく、Dockerの起動時に発生。
+  パッケージ関連のエラーであると推測する。
+  https://qiita.com/Crow314/items/794cabf5603cc5938855
+  
   恐らくここでdocker-ceの処理中にエラー。インストール自体はされているため、次からの手順を続ける
   
 2. iptableをレガシーに設定
