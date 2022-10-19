@@ -289,7 +289,11 @@ apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
   https://qiita.com/Crow314/items/794cabf5603cc5938855
   以下のコマンドでパッケージエラーを調べられる。出力がなければエラーなし。
   ```
-  dpkg --audit
+  sudo dpkg --audit
+  ```
+  パッケージエラー解消のために、以下のコマンドを実行。
+  ```
+  sudo dpkg --configure docker-ce
   ```
   
 2. iptableをレガシーに設定
