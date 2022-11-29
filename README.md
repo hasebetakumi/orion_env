@@ -85,7 +85,7 @@ sudo update-locale LANG=ja_JP.UTF-8
 exit
 ```
 12. Ubuntu起動
-13. dateコマンドを実行し、日本語になっているか確認
+13. dateコマンドを実行し、日本語になっているか確認 
 ```
 date
 ```
